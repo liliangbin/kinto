@@ -1,8 +1,8 @@
 FROM alpine
 
-ENV PORT    3000
+ENV PORT    4396
 ENV UUID    c95ef1d4-f3ac-4586-96e9-234a37dda068
-ENV PROTOCOL    vmess
+ENV PROTOCOL    vless
 
 RUN apk update && apk add --no-cache unzip ca-certificates && \
     wget -c https://github.com/v2fly/v2ray-core/releases/latest/download/v2ray-linux-64.zip && \
